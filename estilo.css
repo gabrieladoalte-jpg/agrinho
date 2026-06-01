@@ -1,1 +1,38 @@
+:root{
+--verde:#2E7D32;
+--verde-claro:#4CAF50;
+--verde-escuro:#1B5E20;
+--bege:#F5F1E8;
+--branco:#FFFFFF;
+}
 
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
+html{scroll-behavior:smooth;}
+body{background:var(--bege);color:#333;}
+
+nav{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 10%;background:var(--verde-escuro);z-index:1000;}
+nav .logo{color:white;font-size:28px;font-weight:bold;}
+nav ul{display:flex;gap:20px;list-style:none;}
+nav a{color:white;text-decoration:none;}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=1920');
+background-size:cover;background-position:center;
+display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:white;padding:20px;
+}
+.hero h1{font-size:5rem;}
+.hero h2{margin:15px 0;}
+.hero p{max-width:800px;line-height:1.8;}
+.btn{margin-top:20px;background:var(--verde-claro);padding:15px 30px;border-radius:30px;color:white;text-decoration:none;}
+
+section{padding:90px 10%;}
+h2{text-align:center;margin-bottom:30px;color:var(--verde);}
+.estatisticas{display:flex;justify-content:center;gap:40px;background:white;text-align:center;padding:50px;}
+.contador{font-size:3rem;color:var(--verde);}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;}
+.card{background:white;padding:25px;border-radius:15px;box-shadow:0 4px 10px rgba(0,0,0,.1);}
+.card i{font-size:45px;color:
